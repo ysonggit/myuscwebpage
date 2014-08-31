@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+  <title>Yang Song </title>
+  <link href="./bootstrap-3.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link href="./font-awesome-4.1.0/css/font-awesome.css"
+        rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <style type='text/css'>
+    
+  </style>
+  
+</head>
+<body>
+  <div id="bg">
+    <img src="images/tcl.jpg" alt="tcl" id="bgimg">
+  </div>
+  <!-- Navigation Bar  -->
+  <div id="banner" class="navbar navbar-inverse">
+    <div class="navbar-header navbar-right">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"> Home </a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">Curriculum Vitae</a></li>
+    </ul>
+    </div>
+  </div>
+  <div id="wrap">
+    <div id="content" class="container-fluid">
+      <div class="row">
+	<!-- side column  -->    
+	<div class="col-md-2">
+          <!-- empty column for margin -->
+          <!-- <div id="eve">  -->
+          <!--   <img src="images/eve.png" alt="eve" height="200">   -->
+          <!-- </div>  -->
+	</div>
+
+	<!-- Profile Image  -->
+	<div class="col-md-8">
+	  <!-- create a table of 2 x 2 -->
+	  <table id="intro">
+	    <tr>
+	      <div class="col-xs-8">
+	      <td>
+		<!-- Self Introduction -->
+		<!--div class="col-md-5"-->
+		<h3> About Me</h3>
+		<p>
+		  I am a Ph.D. candidate in the 
+		  <a href="http://www.cse.sc.edu" target="_blank">
+		    Department of Computer Science and Engineering
+		  </a>
+		  at University of South Carolina, Columbia.</p>        
+		<p>
+		  Currently I am working
+		  in the South Carolina Autonomous Robotics Research (SCARR)
+		  Laboratory under the supervision of 
+		  <a href="http://www.cse.sc.edu/~jokane" target="_blank">
+		    Prof. Jason M. O'kane</a>.
+		  My research interests include Multi-robot Systems,
+		  Planning Algorithms and Computational Geometry. 
+		</p>
+		<h3> Contact </h3>
+		<p>
+		  315 Main Street, 1D43<br>
+		  Columbia, SC 29201<br>
+		  Email: <a href="mailto:ysong.sc@gmail.com">ysong.sc@gmail.com</a>
+		</p>
+		<ul class="list-inline banner-social-buttons">     
+		  <li> 
+		    <a class="btn btn-default btn-md" href="http://guitarpenguin.i11r.com"> 
+		      <i class="fa fa-edit"></i> 
+		      <span class="network-name"> 
+			Blog
+		      </span> 
+		    </a> 
+		  </li> 
+		  <li>
+		    <a class="btn btn-default btn-md" href="http://github.com/ysonggit">
+		      <i class="fa fa-github"></i>
+		      <span class="network-name">
+			Github
+		      </span>
+		    </a>
+
+		  </li>
+		  <li>
+		    <a class="btn btn-default btn-md" href="http://www.linkedin.com/in/ysonglinkedin">
+		      <i class="fa fa-linkedin"></i>
+		      <span class="network-name">
+			Linkedin
+		      </span>
+		    </a>
+		  </li>
+		  <!-- <li>  -->
+		  <!--   <a class="btn btn-default btn-md" href="https://plus.google.com/u/0/115828429959164083102/posts">  -->
+		  <!--     <i class="fa fa-google-plus fa-fw"></i>  -->
+		  <!--     <span class="network-name">  -->
+		  <!--       Google+  -->
+		  <!--     </span>  -->
+		  <!--   </a>  -->
+		  <!-- </li>  -->
+		</ul>
+		
+	      </td>
+	      </div>
+	      <div class="col-xs-4"> 
+	      <td> 
+		<div id="profile" class="grow pic">
+		  <img src="images/sfo.jpg" alt="me" height="320" id="me">
+		</div>
+	      </td>
+	      </div>
+	    </tr>
+	    
+	    <!-- 
+		 A new Row for lab logo
+	      -->
+	    
+	    <tr style="line-height: 150px;">
+	      <!--td class="col-xs-4">
+		<div id="sclogo">
+		  <a href="http://www.sc.edu">
+		    <!-- original figure size: 2099 x 1217, Resize to with 250 , height 145 -->
+		    <!--img src="http://upload.wikimedia.org/wikipedia/en/1/1a/New_University_of_South_Carolina_Logo.png" alt="sclogo" width="250">
+		  </a>
+		</div>
+	      </td-->
+	      <td colspan="2" class="col-xs-12">
+		<div id="scarr">
+		  <a href="http://www.cse.sc.edu/~jokane">
+		    <!-- original size : 1652 x 525, resize to height 145 to align with sc logo-->
+		    <img src="http://www.cse.sc.edu/~jokane/images/scarr-logo-ext.png" alt="scarr" height="145">
+		  </a>
+		</div>
+	      </td>
+	    </tr>
+	  </table>
+     	  <!--/div-->
+
+	</div>
+	
+	<div class="col-md-2">
+          <!-- empty column for margin -->
+	  <!--div id="walle">
+	      <img src="images/walle.jpg" alt="wall-e" height="220"> 
+	  </div-->
+	</div>
+      </div> <!-- endof class="row"-->
+    </div> <!-- endof class = content-->
+
+    <!-- push down some space -->
+    <!--<div id="push"></div>   -->
+  </div><!-- end of class="wrap" -->
+  <script>
+  /* script to change background image and foreground color based onl local daytime (6:00 - 19:00)  and nighttime (20:00 - 5:00)*/
+      var day = new Date();
+      var hr = day.getHours();
+      if (hr>=6 && hr <=19){
+         document.getElementById("bgimg").src="";
+      }else{
+	 document.body.style.color="#dadada"; 
+         //document.getElementById("me").src = "images/me.jpg"
+         var anchors = document.getElementsByTagName("a");
+         for(var i=3; i<anchors.length; i++){
+	    
+             /* i starts from 3, means do not change hyperlink color in
+		the navigation bar */
+	     if(i>4){
+	        anchors[i].style.color="#ffebcd";
+	     }else{
+	        anchors[i].style.color="#73000a";
+	     }
+             
+	 }
+      }
+  </script>
+  <div id="footer">
+    <footer id="logo-footer">
+     <div class="row">
+       <div class="col-xs-8"></div>
+       <div class="col-xs-4">  
+         <a href="http://www.sc.edu" class="logo"></a>
+       </div>
+       
+     </div>
+     
+    </footer>
+  </div>
+
+</body>
+</html>	
