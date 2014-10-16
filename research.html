@@ -9,7 +9,7 @@
 
   <script type="text/javascript" src="./bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript"
-  src="http://code.jquery.com/jquery.min.js"></script>
+          src="http://code.jquery.com/jquery.min.js"></script>
 
   <!-- Load Mathjax from CDN -->
   <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -18,18 +18,18 @@
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
     });
   </script>
-  
+
   <!-- TeX4ht generated SVG figures -->
-  <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
-  <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
-  <!-- html for hexlg --> 
-  <meta name="src" content="tex/hex/hexlg.tex"> 
-  <link rel="stylesheet" type="text/css" href="tex/hex/hexlg.css"> 
+  <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)">
+  <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)">
+  <!-- html for hexlg -->
+  <meta name="src" content="tex/hex/hexlg.tex">
+  <link rel="stylesheet" type="text/css" href="tex/hex/hexlg.css">
   <!-- html for octsqlg -->
-  <meta name="src" content="tex/octsq/octsqlg.tex"> 
-  <link rel="stylesheet" type="text/css" href="tex/octsq/octsqlg.css"> 
+  <meta name="src" content="tex/octsq/octsqlg.tex">
+  <link rel="stylesheet" type="text/css" href="tex/octsq/octsqlg.css">
   <!-- nav-tab works with this version of bootstrap js only -->
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>   
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
   <!-- for video player plugin -->
   <script src="mediaelement-and-player.min.js"></script>
@@ -39,9 +39,8 @@
     width: 550px;
     }
 
-   
   </style>
-  
+
   <script>
     // script for video player
     $(document).ready(function() {
@@ -54,21 +53,21 @@
   </script>
 </head>
 <body>
- 
+
   <!-- Navigation Bar  -->
   <div id="banner" class="navbar navbar-inverse">
     <div class="navbar-header navbar-right">
-    <ul class="nav navbar-nav">
-      <li><a href="index.html"> Home </a></li>
-      <li class="active"><a href="research.html">Research</a></li>
-      <li><a href="cv.html">Curriculum Vitae</a></li>
-    </ul>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html"> Home </a></li>
+        <li class="active"><a href="research.html">Research</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+      </ul>
     </div>
   </div>
   <div id="wrap">
     <div id="content" class="container-fluid">
       <div class="row">
-        <!-- side column  -->    
+        <!-- side column  -->
         <div class="col-md-2">
           <!-- empty column for margin -->
           <!-- <div id="eve">  -->
@@ -79,13 +78,13 @@
         <!-- Profile Image  -->
         <div class="col-md-8">
           <script>
-            $(document).ready(function(){ 
+            $(document).ready(function(){
             $("#myTab a").click(function(e){
     	    e.preventDefault();
     	    $(this).tab('show');
             });
             });
-            
+
           </script>
           <ul class="nav nav-tabs" id="myTab">
             <li class="active"><a href="#sectionA">Distributed Formation</a></li>
@@ -105,15 +104,15 @@
                 robots form arbitrary repeated lattice pattern, including
                 squares, hexagons, octagon-squares, etc.. Our
                 algorithm takes the desired lattice pattern as input,
-                which is represented as a 
+                which is represented as a
                 <a data-toggle="popover" href="#" id="latticegraph"
-                data-placement="top" data-container="body"
-                data-content="A directed graph with each edge associated with rigid-body transformations between the local frames of pairs of neighbor robots"> lattice
-                graph</a>. The robots can autonomously organize
+                   data-placement="top" data-container="body"
+                   data-content="A directed graph with each edge associated with rigid-body transformations between the local frames of pairs of neighbor robots">
+                  lattice graph</a>. The robots can autonomously organize
                 themselves into a family of rooted trees, and use
-                these trees to perform task assignments locally 
+                these trees to perform task assignments locally
                 without conflicts.</p>
-           
+
               <script>
                 $('.collapse').collapse()
               </script>
@@ -122,7 +121,7 @@
                   <div class="panel-heading">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                        Repeated Hexagon Formation
+                        Prior Formation Algorithm
                       </a>
                     </h4>
                   </div>
@@ -137,14 +136,20 @@
                           eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
                           put a bird on it squid single-origin coffee nulla
                           assumenda shoreditch et.</p>
-                        
+                        <p>Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea
+                          proident. Ad vegan excepteur butcher vice
+                          lomo. Leggings occaecat craft beer farm-to-table,
+                          raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable
+                          VHS.</p>
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
                                 data-toggle="modal" data-target="#myModal">
-                            <i class="fa fa-video-camera"></i> Launch Simulation Video
+                          <i class="fa fa-video-camera"></i> Hexagon Simulation
                         </button>
-                        
+
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
@@ -160,7 +165,7 @@
                                   <video src="videos/hexagon1000009v12sr50.mp4" width="450"
                                          height="450"
                                          controls="controls"
-                                         type="video/mp4"></video>         
+                                         type="video/mp4"></video>
                                 </div>
                               </div>
                               <div class="modal-footer">
@@ -170,43 +175,14 @@
                           </div>
                         </div>
                         <!-- End of modal box -->
-                      </div>
-                      <!-- End of div class col-xs-8 -->
-
-                      <div class="col-xs-4">
-                        <object data="tex/hex/hexlg-1.svg" width="215"
-                                height="199" type="image/svg+xml"></object>
-                      </div>
-                    </div>
-                  </div>
-                </div> <!-- End of div class panel-danger -->
-
-                <div class="panel panel-warning">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                        Repeated Octagon-Square Formation
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <div class="col-xs-8">
-                        <p>Nihil anim keffiyeh helvetica, craft beer
-                          labore wes anderson cred nesciunt sapiente ea
-                          proident. Ad vegan excepteur butcher vice
-                          lomo. Leggings occaecat craft beer farm-to-table,
-                          raw denim aesthetic synth nesciunt you probably
-                          haven't heard of them accusamus labore sustainable
-                          VHS.</p>
 
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
                                 data-toggle="modal" data-target="#myModal2">
-                          <i class="fa fa-video-camera"></i> Launch Simulation Video
+                          <i class="fa fa-video-camera"></i> Octagon-square Simulation
                         </button>
-                        
+
                         <!-- Modal -->
                         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
                           <div class="modal-dialog">
@@ -233,39 +209,47 @@
                             </div>
                           </div>
                         </div>   <!-- End of modal box -->
-                      </div>   <!-- End of div class col-xs-8  -->
+
+                      </div>
+                      <!-- End of div class col-xs-8 -->
 
                       <div class="col-xs-4">
-                        <object data="tex/octsq/octsqlg-1.svg"
-                                width="199" height="199"
-                                type="image/svg+xml"></object>
-                      </div>     <!-- End of div class col-xs-4 -->
-                    </div>       <!-- End of div class panel-body -->
-                  </div>         <!-- End of div id="collapseTwo"  -->
-                </div>           <!-- End of div class panel-warning -->
+                        <object data="tex/hex/hexlg-1.svg"
+                                width="215" height="199"
+                                type="image/svg+xml">
+                        </object>
+                      </div>
+                           <!-- End of div class col-xs-4 -->
+                    </div> <!-- End of panel-body -->
+                  </div>   <!-- End of CollapseOne-->
+                </div>     <!-- End of div class panel-danger -->
 
-                
                 <div class="panel panel-info">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        ROS Implementation
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        New Formation Algorithm
                       </a>
                     </h4>
                   </div>
-                  <div id="collapseThree" class="panel-collapse collapse">
+                  <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
-		      <div class="row">
+                      <div class="col-xs-8">
+                        <p>Nihil anim keffiyeh helvetica, craft beer
+                          labore wes anderson cred nesciunt sapiente ea
+                          proident. Ad vegan excepteur butcher vice
+                          lomo. Leggings occaecat craft beer farm-to-table,
+                          raw denim aesthetic synth nesciunt you probably
+                          haven't heard of them accusamus labore sustainable
+                          VHS.</p>
 
-		      </div>
-		      <div class="row">
-		        <!-- Modal box -->
+                        <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
                                 data-toggle="modal" data-target="#myModal3">
-                          <i class="fa fa-video-camera"></i> Launch Simulation Video
+                          <i class="fa fa-video-camera"></i>Hexagon-square Simulation
                         </button>
-                        
+
                         <!-- Modal -->
                         <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
                           <div class="modal-dialog">
@@ -292,30 +276,39 @@
                             </div>
                           </div>
                         </div>   <!-- End of modal box -->
-			
-		      </div>
+
+                      </div>   <!-- End of div class col-xs-8  -->
+
+                      <div class="col-xs-4">
+
+                      </div>     <!-- End of div class col-xs-4 -->
                     </div>       <!-- End of div class panel-body -->
-                  </div>         <!-- End of div id="collapseThree"  -->
+                  </div>         <!-- End of div id="collapseTwo"  -->
                 </div>           <!-- End of div class panel-info -->
                 
               </div>             <!-- End of div class panel-group -->
-                
+              <a class="btn btn-default btn-sm" href="./papers/paper.pdf">
+                <i class="fa fa-file-pdf-o"></i>
+                <span class="network-name">
+                  Download paper
+                </span>
+              </a>
               <a class="btn btn-default btn-sm" href="./papers/songOkane_icra14.pdf">
                 <i class="fa fa-file-pdf-o"></i>
                 <span class="network-name">
-                  Download Paper
+                  ICRA14 paper
                 </span>
               </a>
-              
+
               <a class="btn btn-default btn-sm" href="./papers/slides_icra14.pdf">
                 <i class="fa fa-file-pdf-o"></i>
                 <span class="network-name">
-                  Download Slides
+                  ICRA14 slides
                 </span>
               </a>
+
             </div> <!-- End of div id="sectionA" class tab-pane fade -->
-            
-            
+
             <div id="sectionB" class="tab-pane fade">
               <h3>Geometric Planning</h3>
               <script>
@@ -328,56 +321,56 @@
                 approximation method to represent the robot's
                 states and uncertainties, we constrained the
                 true information state (<a data-toggle="popover" href="#" id="istate"
-                data-placement="top" data-container="body"
-                data-content="I-state contains all
-                possible states with uncertainties">I-state</a>) to remain in a
+                                           data-placement="top" data-container="body"
+                                           data-content="I-state contains all
+                                                         possible states with uncertainties">I-state</a>) to remain in a
                 structured subset of the I-space.</p>
               <p>
                 The experimental results for a sensor-based navigation
                 task demostrated that using our method, compared to a
                 high-fidelity representation of the un-approximated
                 I-state, achieves a similar success rate at a small
-                fraction of the computational cost.                
+                fraction of the computational cost.
               </p>
               <div class="panel panel-danger">
                 <!-- Default panel contents -->
                 <div class="panel-heading"> <i class="fa
-                fa-video-camera"></i> Simulation Video</div>
+                                                      fa-video-camera"></i> Simulation Video</div>
                 <div class="panel-body">
-                   <!-- Modal box -->
-                        <!-- Button trigger modal -->
-                        <button class="btn btn-primary btn-md"
-                                data-toggle="modal" data-target="#myModalGP">
-                            <i class="fa fa-video-camera"></i> Launch Simulation Video
-                        </button>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModalGP" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGP" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title"
-                                    id="myModalLabelGP">Navigation Task using Double-Rectangle Range Space</h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="video">
-                                  <video src="videos/clutter_dbrect.mp4" width="450"
-                                         height="450"
-                                         controls="controls"
-                                         type="video/mp4"></video>         
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
+                  <!-- Modal box -->
+                  <!-- Button trigger modal -->
+                  <button class="btn btn-primary btn-md"
+                          data-toggle="modal" data-target="#myModalGP">
+                    <i class="fa fa-video-camera"></i> Launch Simulation Video
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModalGP" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGP" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title"
+                              id="myModalLabelGP">Navigation Task using Double-Rectangle Range Space</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="video">
+                            <video src="videos/clutter_dbrect.mp4" width="450"
+                                   height="450"
+                                   controls="controls"
+                                   type="video/mp4"></video>
                           </div>
                         </div>
-                        <!-- End of modal box -->                   
-               
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of modal box -->
+
                 </div>
-               
+
               </div> <!-- End of div class panel-danger -->
 
               <a class="btn btn-default btn-sm" href="./papers/songOkane_icra12.pdf">
@@ -386,17 +379,17 @@
                   Download Paper
                 </span>
               </a>
-              
+
               <a class="btn btn-default btn-sm" href="./papers/slides_icra12.pdf">
                 <i class="fa fa-file-pdf-o"></i>
                 <span class="network-name">
                   Download Slides
                 </span>
               </a>
-                         
+
             </div>
             <!-- End of div id="sectionB" class tab-pane fade -->
-  
+
             <div id="sectionC" class="tab-pane fade">
               <h3>Grid-based Formation</h3>
               <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
@@ -404,31 +397,27 @@
             <!-- End of div id="sectionC" class tab-pane fade -->
           </div> <!-- End of div class tab-content  -->
         </div> <!-- End of div class col-md-8 -->
-          
+
         <div class="col-md-2">
           <!-- empty column for margin -->
-          <!--img src="images/walle.jpg" alt="wall-e" height="220"--> 
+          <!--img src="images/walle.jpg" alt="wall-e" height="220"-->
         </div>
       </div> <!-- End of div class row  -->
 
-    </div> 
+    </div>
     <!-- push down some space -->
     <!--<div id="push"></div>   -->
   </div> <!--  End of div wrap -->
   <div id="footer">
     <footer id="logo-footer">
-     <div class="row">
-       <div class="col-xs-8"> </div>
-       <div class="col-xs-4">  
-         <a href="http://www.sc.edu" class="logo"></a>
-       </div>
-     </div>
+      <div class="row">
+        <div class="col-xs-8"> </div>
+        <div class="col-xs-4">
+          <a href="http://www.sc.edu" class="logo"></a>
+        </div>
+      </div>
     </footer>
   </div>
- 
+
 </body>
-</html>	
-
-
-
-                      
+</html>
