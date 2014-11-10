@@ -86,6 +86,7 @@
             });
 
           </script>
+	  <p> This page is currently under construction ... </p>
           <ul class="nav nav-tabs" id="myTab">
             <li class="active"><a href="#sectionA">Distributed Formation</a></li>
             <li><a href="#sectionB">Geometric Planning</a></li>
@@ -247,9 +248,8 @@
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
                                 data-toggle="modal" data-target="#myModal3">
-                          <i class="fa fa-video-camera"></i>Hexagon-square Simulation
+                          <i class="fa fa-video-camera"></i> Triangle-Hexagon-Square
                         </button>
-
                         <!-- Modal -->
                         <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
                           <div class="modal-dialog">
@@ -257,15 +257,13 @@
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h4 class="modal-title"
-                                    id="myModalLabel3">Hexagon-Square
+                                    id="myModalLabel3"> Triangle-Hexagon-Square
                                   Formation with 30 Robots</h4>
                               </div>
                               <div class="modal-body">
                                 <div class="video">
-                                  <video src="videos/hexagon_square.mp4"
-                                         width="450" height="350"
-                                         controls="controls"
-                                         type="video/mp4"></video>
+                                  <video src="./videos/trihexsqvideo.mp4" width="450" height="350"
+                                         controls="controls" type="video/mp4"></video>
                                 </div>
                               </div>
                               <div class="modal-footer">
@@ -285,7 +283,7 @@
                     </div>       <!-- End of div class panel-body -->
                   </div>         <!-- End of div id="collapseTwo"  -->
                 </div>           <!-- End of div class panel-info -->
-                
+
               </div>             <!-- End of div class panel-group -->
               <a class="btn btn-default btn-sm" href="./papers/paper.pdf">
                 <i class="fa fa-file-pdf-o"></i>
@@ -337,38 +335,58 @@
                 <div class="panel-heading"> <i class="fa
                                                       fa-video-camera"></i> Simulation Video</div>
                 <div class="panel-body">
-                  <!-- Modal box -->
-                  <!-- Button trigger modal -->
-                  <button class="btn btn-primary btn-md"
-                          data-toggle="modal" data-target="#myModalGP">
-                    <i class="fa fa-video-camera"></i> Launch Simulation Video
-                  </button>
+                  <div class="col-sm-7">
+                    <p>A moble robot navigating
+                    through its environment by
+                    observing <span style="color:blue">landmarks</span>.
+                    The <span style="color:blue">blue</span>
+                    circles denote the range of
+                    where the robot could get
+                    observations from landmarks.
+                    The robot represents its
+                    knowledge about its own
+                    position using a <span style="color:green">double
+                    rectangle</span> approximated
+                    information state. The
+                    true <i>I-state</i> is shown as
+                    a <span style="color:green">green</span>
+                    region.</p>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="myModalGP" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGP" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h4 class="modal-title"
-                              id="myModalLabelGP">Navigation Task using Double-Rectangle Range Space</h4>
-                        </div>
-                        <div class="modal-body">
-                          <div class="video">
-                            <video src="videos/clutter_dbrect.mp4" width="450"
-                                   height="450"
-                                   controls="controls"
-                                   type="video/mp4"></video>
+                    <!-- Modal box -->
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary btn-md"
+                            data-toggle="modal" data-target="#myModalGP">
+                      <i class="fa fa-video-camera"></i> Launch Simulation Video
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModalGP" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGP" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"
+                                id="myModalLabelGP">Navigation Task using Double-Rectangle Range Space</h4>
                           </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <div class="modal-body">
+                            <div class="video">
+                              <video src="videos/clutter_dbrect.mp4" width="450"
+                                     height="450"
+                                     controls="controls"
+                                     type="video/mp4"></video>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <!-- End of modal box -->
                   </div>
-                  <!-- End of modal box -->
-
+                  <div class="col-sm-5">
+                    <img src="images/navclutter.jpg" alt="navtask" height="150">
+                  </div>
                 </div>
 
               </div> <!-- End of div class panel-danger -->
