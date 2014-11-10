@@ -129,14 +129,14 @@
                   <div id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
                       <div class="col-xs-8">
-                        <p>The input to our previous algorithm is a representation of desired formation in
-                          the form of a directed graph in which each vertex represents a "role" for a
-                          robot to play in the formation, and each outgoing edge is labeled with rigid
-                          body transformation indicating the desired location of one of that robot's
-                          neighbors.
+                        <p>The input to our algorithm is a representation of desired formation:
+                          a directed graph in which each vertex denotes a "role" for a
+                          robot to play, and each outgoing edge is labeled with rigid
+                          transformation indicating the desired location of one of that robot's
+                          neighbors. (Right: lattice graph representing repeated hexgonal lattice)
                         </p>
-                        <p>As the algorithm proceeds, each robot continually broadcasts
-                          messages to the other nearby robots.  Based on these messages, the robots
+                        <p>Each robot continually broadcasts
+                          messages to the nearby robots. Based on these messages, the robots
                           organize themselves into a rooted tree structure, and
                           then move to the positions assigned to them by their parents in this tree.
                         </p>
@@ -215,8 +215,7 @@
                                 width="215" height="199"
                                 type="image/svg+xml">
                         </object>
-                        <p>The lattice graph representing repeated hexgonal lattice.
-                        </p>
+
                       </div>
                            <!-- End of div class col-xs-4 -->
                     </div> <!-- End of panel-body -->
