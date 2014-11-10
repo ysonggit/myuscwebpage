@@ -129,21 +129,17 @@
                   <div id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
                       <div class="col-xs-8">
-                        <p>
-                          Anim pariatur cliche reprehenderit, enim eiusmod
-                          high life accusamus terry richardson ad squid. 3
-                          wolf moon officia aute, non cupidatat skateboard
-                          dolor brunch. Food truck quinoa nesciunt laborum
-                          eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                          put a bird on it squid single-origin coffee nulla
-                          assumenda shoreditch et.</p>
-                        <p>Nihil anim keffiyeh helvetica, craft beer
-                          labore wes anderson cred nesciunt sapiente ea
-                          proident. Ad vegan excepteur butcher vice
-                          lomo. Leggings occaecat craft beer farm-to-table,
-                          raw denim aesthetic synth nesciunt you probably
-                          haven't heard of them accusamus labore sustainable
-                          VHS.</p>
+                        <p>The input to our previous algorithm is a representation of desired formation in
+                          the form of a directed graph in which each vertex represents a "role" for a
+                          robot to play in the formation, and each outgoing edge is labeled with rigid
+                          body transformation indicating the desired location of one of that robot's
+                          neighbors.
+                        </p>
+                        <p>As the algorithm proceeds, each robot continually broadcasts
+                          messages to the other nearby robots.  Based on these messages, the robots
+                          organize themselves into a rooted tree structure, and
+                          then move to the positions assigned to them by their parents in this tree.
+                        </p>
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
@@ -219,6 +215,8 @@
                                 width="215" height="199"
                                 type="image/svg+xml">
                         </object>
+                        <p>The lattice graph representing repeated hexgonal lattice.
+                        </p>
                       </div>
                            <!-- End of div class col-xs-4 -->
                     </div> <!-- End of panel-body -->
@@ -236,14 +234,21 @@
                   <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
                       <div class="col-xs-8">
-                        <p>Nihil anim keffiyeh helvetica, craft beer
-                          labore wes anderson cred nesciunt sapiente ea
-                          proident. Ad vegan excepteur butcher vice
-                          lomo. Leggings occaecat craft beer farm-to-table,
-                          raw denim aesthetic synth nesciunt you probably
-                          haven't heard of them accusamus labore sustainable
-                          VHS.</p>
-
+                        <p>Prior algorithm has two critical limitations:
+                          <ol>
+                          <li>There is no guarantee that the robots will eventually form the desired
+                            formation and terminate the algorithm.
+                          </li>
+                          <li>The motion strategy may cause the formation become disconnected,
+                            decreasing the overall solution quality.
+                          </li>
+                          </ol>
+                        </p>
+                        <p>
+                          By defining a new procedure to construct the tree structure and modifying the motion strategy,
+                          we prove that robots executing this new algorithm will form the desired
+                          lattice with bounded execution time.
+                        </p>
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
