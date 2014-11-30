@@ -60,9 +60,21 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.cv-section {
+.resume-section {
     height: 100%;
     padding-top: 150px;
     /* text-align: center; */
     background: #eee;
+}
+/* ---------------------------------------------- /*
+ * Resume
+/* ---------------------------------------------- */
+
+
+
+.resume-place > i,
+.resume-place > h4 > i {
+	color: #C4C4C4;
+	font-size: 14px;
+	margin-right: 5px;
 }

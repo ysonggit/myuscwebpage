@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Yang Song </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./bootstrap-3.1.1/dist/css/bootstrap.min.css"
         rel="stylesheet">
   <link href="./font-awesome-4.1.0/css/font-awesome.css"
@@ -55,6 +56,16 @@
     });
     });
   </script>
+
+  <!-- Custom Style CSS License Required -->
+  <!-- Magnific-popup lightbox -->
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- Simple text rotator -->
+  <link href="assets/css/simpletextrotator.css" rel="stylesheet">
+  <!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Custom styles CSS 
+  <link href="assets/css/style.css" rel="stylesheet" media="screen">-->
 </head>
 <!-- The #page-top ID is part of the scrolling feature 
      the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -68,7 +79,7 @@
     <ul class="nav navbar-nav">
       <li><a class="page-scroll" href="#page-top"> Home </a></li>
       <li><a class="page-scroll" href="#research">Research</a></li>
-      <li><a class="page-scroll" href="#teaching">Curriculum Vitae</a></li>
+      <li><a class="page-scroll" href="#resume">Resume</a></li>
     </ul>
     </div>
   </div>
@@ -112,7 +123,7 @@
 		<p>
 		  315 Main Street, 1D43<br> Columbia, SC 29201<br>
 		  Email: <a href="mailto:ysong.sc@gmail.com"
-		  style="color:#73000a">ysong.sc@gmail.com</a>
+		  style="color:#ffebcd">ysong.sc@gmail.com</a>
 		</p>
 		<ul class="list-inline banner-social-buttons">
 		  <li>
@@ -140,14 +151,6 @@
 		      </span>
 		    </a>
 		  </li>
-		  <!-- <li>  -->
-		  <!--   <a class="btn btn-default btn-md" href="https://plus.google.com/u/0/115828429959164083102/posts">  -->
-		  <!--     <i class="fa fa-google-plus fa-fw"></i>  -->
-		  <!--     <span class="network-name">  -->
-		  <!--       Google+  -->
-		  <!--     </span>  -->
-		  <!--   </a>  -->
-		  <!-- </li>  -->
 		</ul>
 
 	      </td>
@@ -160,11 +163,9 @@
 	      </td>
 	      </div>
 	    </tr>
-
 	    <!--
 		 A new Row for lab logo
 	      -->
-
 	    <tr style="line-height: 150px;">
 	      <!--td class="col-xs-4">
 		<div id="sclogo">
@@ -196,9 +197,6 @@
 	</div>
       </div> <!-- endof class="row"-->
     </div> <!-- endof class = content-->
-
-    <!-- push down some space -->
-    <!--<div id="push"></div>   -->
   </section><!-- end of class="intro" -->
   
   <!-------------------------------------------------------- research -------------------------------------------->
@@ -207,10 +205,6 @@
       <div class="row">
         <!-- side column  -->
         <div class="col-md-2">
-          <!-- empty column for margin -->
-          <!-- <div id="eve">  -->
-          <!--   <img src="images/eve.png" alt="eve" height="200">   -->
-          <!-- </div>  -->
         </div>
 
         <!-- Profile Image  -->
@@ -226,9 +220,9 @@
           </script>
 	  <p> This page is currently under construction ... </p>
           <ul class="nav nav-tabs" id="myTab">
-            <li class="active"><a href="#sectionA">Distributed Formation</a></li>
-            <li><a href="#sectionB">Geometric Planning</a></li>
-            <li><a href="#sectionC">Grid-based Formation</a></li>
+            <li class="active"><a href="#sectionA" data-toggle="tab">Distributed Formation</a></li>
+            <li><a href="#sectionB" data-toggle="tab">Geometric Planning</a></li>
+            <li><a href="#sectionC" data-toggle="tab">Grid-based Formation</a></li>
           </ul>
           <div class="tab-content">
             <div id="sectionA" class="tab-pane fade in active">
@@ -583,7 +577,130 @@
     </div>
     <!-- push down some space -->
     <!--<div id="push"></div>   -->
-  </section> <!--  End of div research -->
+  </section> <!--  End of research-section -->
+  
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="row">
+	<div class="col-md-6 headline wow bounceInDown">
+	  <h2>Resume</h2>
+	  <p>My education and experience.</p> 
+	</div>
+	<div class="col-md-3 col-md-offset-3 wow bounceInDown">
+	  <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download Resume</a>
+	</div>
+      </div><!-- .row -->
+      <div class="row resume-items">
+	<div class="col-md-3 wow bounceInLeft">
+	  <h3>Education</h3>
+	</div>
+
+	<div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+	  <h4>Ph.D. Candidate, Computer Science</h4>
+	  <p>Research Interests: Robotics, Multi-robot Systems, Planning Algorithm</p>
+	  <p>Advisor: Dr. Jason O'Kane</p>
+	  <hr class="hidden-xs">
+	</div>
+
+	<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+	  <h4><i class="fa fa-suitcase"></i> University of South Carolina</h4>
+	  <i class="fa fa-calendar"></i> 2010 - 2015
+	  <hr class="visible-xs">
+	</div>
+
+	<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+	  <h4>M.S. Electrical Engineering</h4>
+	  <p>Research Interests: Robotics, Control Systems</p>
+	  <p>Advisor: Dr. Rafael Fierro</p>
+	  <hr class="hidden-xs">
+	</div>
+
+	<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+	  <h4><i class="fa fa-suitcase"></i> University of New Mexico</h4>
+	  <i class="fa fa-calendar"></i> 2008 - 2009
+	  <hr class="visible-xs">
+	</div>
+
+      </div><!-- .row -->
+
+      <div class="row resume-items">
+
+	<div class="col-md-3 wow bounceInLeft">
+	  <h3>Teaching Experience</h3>
+	</div>
+
+	<div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+	  <h4>CSCE102 General Application Programming</h4>
+	  <p>Lecturer Instructor</p>
+	  <p>Web front-end interface development using
+	  HTML/CSS/JavaScript</p>
+	  <hr class="hidden-xs">
+	</div>
+
+	<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+	  <h4><i class="fa fa-suitcase"></i>University of South Carolina</h4>
+	  <i class="fa fa-calendar"></i> 2012 - 2014
+	  <hr class="visible-xs">
+	</div>
+
+	<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+	  <h4>CSCE212 Introduction to Computer Architecture</h4>
+	  <p>Lecturer Instructor</p>
+	  <p>Computer architecture and assembly-language programming (MIPS)</p>
+	  <hr class="hidden-xs">
+	</div>
+
+	<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+	  <h4><i class="fa fa-suitcase"></i>University of South Carolina</h4>
+	  <i class="fa fa-calendar"></i> 2012
+	  <hr class="visible-xs">
+	</div>
+	
+	<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+	  <h4>CSCE145 Algorithmic Design I</h4>
+	  <p>Teaching Assistant</p>
+	  <p>Problem-solving patterns, algorithm design, and programming in Java</p>
+	  <hr class="hidden-xs">
+	</div>
+
+	<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+	  <h4><i class="fa fa-suitcase"></i>University of South Carolina</h4>
+	  <i class="fa fa-calendar"></i> 2010 - 2011
+	  <hr class="visible-xs">
+	</div>
+      </div><!-- .row -->
+
+      <div class="row">
+
+	
+
+      </div><!-- .row -->
+
+    </div><!-- .container -->
+    <!-- jQuery -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<!-- OwlCarousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Modal for portfolio -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Text rotator -->
+	<script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+	<!-- Waypoints -->
+	<script src="assets/js/jquery.waypoints.js"></script>
+	<!-- CountTo  -->
+	<script src="assets/js/jquery.countTo.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>   
+	<!-- Smooth scroll -->
+	<script src="assets/js/smoothscroll.js"></script>
+	<!-- Fitvids -->
+	<script src="assets/js/jquery.fitvids.js"></script>
+	<!-- Custom scripts -->
+	<script src="assets/js/custom.js"></script>
+  </section> <!-- End of resume-section -->
 
 
   <div id="footer">
