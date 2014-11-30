@@ -311,5 +311,9 @@
 .greeting{
     font-size: 64px;
     font-weight: 700;
-    margin: 5px 0 15px;
+}
+
+#sclogo{
+    /*margin-top: 40px;*/
+    
 }
