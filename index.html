@@ -43,7 +43,6 @@
     .carousel-inner img{
     width: 550px;
     }
-
   </style>
 
   <script>
@@ -78,125 +77,108 @@
   <div id="banner" class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header navbar-right">
     <ul class="nav navbar-nav">
-      <li><a class="page-scroll" href="#page-top"> Home </a></li>
+      <li><a class="page-scroll" href="#page-top">Home </a></li>
+      <li><a class="page-scroll" href="#profile">Profile</a></li>
       <li><a class="page-scroll" href="#research">Research</a></li>
       <li><a class="page-scroll" href="#resume">Resume</a></li>
     </ul>
     </div>
   </div>
-  <section id="intro" class="intro-section">
+  
+
+  <section id="intro" class="section">
+    <div class="container">
+      <div class="row">
+	<div class="col-md-12">
+	  <div class="hello wow bounceInDown">	
+            <h1 class="greeting" style="color: #73000a">Yang Song</h1>
+            
+	  </div>	  
+	</div>
+      </div><!-- .row -->
+    <div class="row">
+      <a href="#profile">
+	<div class="mouse-icon">
+	  <div class="wheel"></div>
+	</div>
+      </a>
+      <div id="scarr" class="wow bounceInUp">
+	<a href="http://www.cse.sc.edu/~jokane">
+	  <!-- original size : 1652 x 525, resize to height 145 to align with sc logo-->
+	  <img src="http://www.cse.sc.edu/~jokane/images/scarr-logo-ext.png" alt="scarr" height="120">
+	</a>
+      </div>
+    </div>
+    </div><!-- .container -->
+  </section>
+  <!-- Intro section end -->
+
+  <section id="profile" class="profile-section">
     <div id="content" class="container-fluid">
       <div class="row">
 	<!-- side column  -->
 	<div class="col-md-2">
-          <!-- empty column for margin -->
-          <!-- <div id="eve">  -->
-          <!--   <img src="images/eve.png" alt="eve" height="200">   -->
-          <!-- </div>  -->
 	</div>
-	<!-- Profile Image  -->
-	<div class="col-md-8">
-	  <!-- create a table of 2 x 2 -->
-	  <table id="intro">
-	    <tr>
-	      <div class="col-xs-8">
-	      <td>
-		<!-- Self Introduction -->
-		<!--div class="col-md-5"-->
-		<h3> About Me</h3>
-		<p>
-		  I am a Ph.D. candidate in the
-		  <a href="http://www.cse.sc.edu" target="_blank" style="color:#73000a">
-		    Department of Computer Science and Engineering
-		  </a>
-		  at University of South Carolina, Columbia.</p>
-		<p>
-		  Currently I am working
-		  in the South Carolina Autonomous Robotics Research (SCARR)
-		  Laboratory under the supervision of
-		  <a href="http://www.cse.sc.edu/~jokane" target="_blank" style="color:#73000a">
-		    Prof. Jason M. O'kane</a>.  My research interests include
-		  Multi-robot Systems, Planning Algorithms and Computational
-		  Geometry.
-		</p>
-		<h3> Contact </h3>
-		<p>
-		  315 Main Street, 1D43<br> Columbia, SC 29201<br>
-		  Email: <a href="mailto:ysong.sc@gmail.com"
-		  style="color:#ffebcd">ysong.sc@gmail.com</a>
-		</p>
-		<ul class="list-inline banner-social-buttons">
-		  <li>
-		    <a class="btn btn-default btn-md" href="http://guitarpenguin.i11r.com" style="color:#ffebcd">
-		      <i class="fa fa-edit"></i>
-		      <span class="network-name">
-			Blog
-		      </span>
-		    </a>
-		  </li>
-		  <li>
-		    <a class="btn btn-default btn-md" href="http://github.com/ysonggit" style="color:#ffebcd">
-		      <i class="fa fa-github"></i>
-		      <span class="network-name">
-			Github
-		      </span>
-		    </a>
+	<div class="col-md-6 col-sm-12 wow bounceInLeft">
+	  <h2>Profile</h2>
+	    <p>
+	    I am a Ph.D. candidate in the
+	    <a href="http://www.cse.sc.edu" target="_blank" style="color:#73000a">
+	      Department of Computer Science and Engineering
+	    </a>
+	    at University of South Carolina, Columbia.</p>
+	  <p>
+	    Currently I am working
+	    in the South Carolina Autonomous Robotics Research (SCARR)
+	    Laboratory under the supervision of
+	    <a href="http://www.cse.sc.edu/~jokane" target="_blank" style="color:#73000a">
+	      Prof. Jason M. O'kane</a>.  My research interests include
+	    Multi-robot Systems, Planning Algorithms and Computational
+	    Geometry.
+	  </p>
+	  <h3> Contact </h3>
+	  <p>
+	    315 Main Street, 1D43<br> Columbia, SC 29201<br>
+	    Email: <a href="mailto:ysong.sc@gmail.com">ysong.sc@gmail.com</a>
+	  </p>
+	   <ul class="list-inline banner-social-buttons">
+	    <li>
+	      <a class="btn btn-default btn-md" href="http://guitarpenguin.i11r.com">
+		<i class="fa fa-edit"></i>
+		<span class="network-name">
+		  Blog
+		</span>
+	      </a>
+	    </li>
+	    <li>
+	      <a class="btn btn-default btn-md" href="http://github.com/ysonggit">
+		<i class="fa fa-github"></i>
+		<span class="network-name">
+		  Github
+		</span>
+	      </a>
 
-		  </li>
-		  <li>
-		    <a class="btn btn-default btn-md" href="http://www.linkedin.com/in/ysonglinkedin" style="color:#ffebcd">
-		      <i class="fa fa-linkedin"></i>
-		      <span class="network-name">
-			Linkedin
-		      </span>
-		    </a>
-		  </li>
-		</ul>
-
-	      </td>
-	      </div>
-	      <div class="col-xs-4">
-	      <td>
-		<div id="profile" class="grow pic">
-		  <img src="images/sfo.jpg" alt="me" height="320" id="me" class="img-rounded">
-		</div>
-	      </td>
-	      </div>
-	    </tr>
-	    <!--
-		 A new Row for lab logo
-	      -->
-	    <tr style="line-height: 150px;">
-	      <!--td class="col-xs-4">
-		<div id="sclogo">
-		  <a href="http://www.sc.edu">
-		    <!-- original figure size: 2099 x 1217, Resize to with 250 , height 145 -->
-		    <!--img src="http://upload.wikimedia.org/wikipedia/en/1/1a/New_University_of_South_Carolina_Logo.png" alt="sclogo" width="250">
-		  </a>
-		</div>
-	      </td-->
-	      <td colspan="2" class="col-xs-12">
-		<div id="scarr">
-		  <a href="http://www.cse.sc.edu/~jokane">
-		    <!-- original size : 1652 x 525, resize to height 145 to align with sc logo-->
-		    <img src="http://www.cse.sc.edu/~jokane/images/scarr-logo-ext.png" alt="scarr" height="145">
-		  </a>
-		</div>
-	      </td>
-	    </tr>
-	  </table>
-     	  <!--/div-->
-
+	    </li>
+	    <li>
+	      <a class="btn btn-default btn-md" href="http://www.linkedin.com/in/ysonglinkedin"> 
+		<i class="fa fa-linkedin"></i>
+		<span class="network-name">
+		  Linkedin
+		</span>
+	      </a>
+	    </li>
+	  </ul>
+	
+	</div>
+	<div class="col-md-4 col-sm-12 hidden-xs wow bounceInRight">
+	  <div id="profile" class="grow pic"> 
+	    <img src="images/sfo.jpg" alt="me" height="320" id="me" class="img-rounded">
+	  </div> 
 	</div>
 
-	<div class="col-md-2">
-          <!-- empty column for margin -->
-	  <!--div id="walle">
-	      <img src="images/walle.jpg" alt="wall-e" height="220">
-	  </div-->
-	</div>
       </div> <!-- endof class="row"-->
-      <div class="push"></div> 
+       
+      <!-- <div class="push"></div>   -->
     </div> <!-- endof class = content-->
   </section><!-- end of class="intro" -->
 
@@ -208,7 +190,6 @@
         <div class="col-md-2">
         </div>
 
-        <!-- Profile Image  -->
         <div class="col-md-8">
           <script>
             $(document).ready(function(){
@@ -219,6 +200,7 @@
             });
 
           </script>
+          <h2>Research</h2>
 	  <!-- <p> This page is currently under construction ... </p> -->
           <ul class="nav nav-tabs" id="myTab">
             <li class="active"><a href="#sectionA" data-toggle="tab">Distributed Formation</a></li>
@@ -555,7 +537,6 @@
 
             </div>
             <!-- End of div id="sectionB" class tab-pane fade -->
-
             <!-- <div id="sectionC" class="tab-pane fade"> -->
             <!--   <h3>Grid-based Formation</h3> -->
             <!--   <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. -->
@@ -570,13 +551,11 @@
         </div> <!-- End of div class col-md-8 -->
 
         <div class="col-md-2">
-          <!-- empty column for margin -->
-          <!--img src="images/walle.jpg" alt="wall-e" height="220"-->
         </div>
       </div> <!-- End of div class row  -->
     </div>
     <!-- push down some space -->
-    <div class="push"></div>
+    <!-- <div class="push"></div> -->
   </section> <!--  End of research-section -->
   
   <section id="resume" class="resume-section">
