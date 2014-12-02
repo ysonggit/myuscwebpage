@@ -9,7 +9,7 @@
   <!-- Custom CSS -->
   <link href="./main.css" rel="stylesheet">
   <link href="./scrolling-nav.css" rel="stylesheet">
-
+  
   <!-- Custom CSS  & JS for research section -->
   <link href="./ihover.css" rel="stylesheet">
   <script type="text/javascript" src="./bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
@@ -52,6 +52,53 @@
     });
   </script>
   -->
+  <style>
+    #lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+    }
+
+    #lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    /*padding: 5px 8px;
+     border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    */
+    z-index:1032;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+    var $lightbox = $('#lightbox');
+    
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'), 
+            src = $img.attr('src'),
+            alt = $img.attr('alt'),
+            css = {
+                'maxWidth': $(window).width() - 100,
+                'maxHeight': $(window).height() - 100
+            };
+    
+        $lightbox.find('.close').addClass('hidden');
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
+    });
+    
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+            
+        $lightbox.find('.modal-dialog').css({'width': $img.width()});
+        $lightbox.find('.close').removeClass('hidden');
+    });
+    });
+  </script>
   <!-- Custom Style CSS License Required -->
   <!-- Magnific-popup lightbox -->
   <link href="assets/css/magnific-popup.css" rel="stylesheet">
@@ -59,10 +106,10 @@
   <link href="assets/css/simpletextrotator.css" rel="stylesheet">
   <!-- Animate css -->
   <link href="assets/css/animate.css" rel="stylesheet">
-  <!-- Custom styles CSS
+  <!-- Custom styles CSS 
   <link href="assets/css/style.css" rel="stylesheet" media="screen">-->
 </head>
-<!-- The #page-top ID is part of the scrolling feature
+<!-- The #page-top ID is part of the scrolling feature 
      the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <!-- Navigation Bar  -->
@@ -76,12 +123,12 @@
     </ul>
     </div>
   </div>
-
+  
   <section id="intro" class="intro-section">
     <div class="container">
       <div class="row">
 	<div class="col-md-12">
-	  <div class="hello wow bounceInDown">
+	  <div class="hello wow bounceInDown">	
             <h1 class="greeting" style="color: #73000a">Yang Song</h1>
           </div>
           <a href="#profile">
@@ -158,7 +205,7 @@
 
 	    </li>
 	    <li>
-	      <a class="btn btn-default btn-md" href="http://www.linkedin.com/in/ysonglinkedin">
+	      <a class="btn btn-default btn-md" href="http://www.linkedin.com/in/ysonglinkedin"> 
 		<i class="fa fa-linkedin"></i>
 		<span class="network-name">
 		  Linkedin
@@ -166,12 +213,12 @@
 	      </a>
 	    </li>
 	  </ul>
-
+	
 	</div>
 	<div class="col-md-4 col-sm-12 hidden-xs wow bounceInRight">
-	  <div id="profile" class="grow pic">
+	  <div id="profile" class="grow pic"> 
 	    <img src="images/sfo.jpg" alt="me" height="320" id="me" class="img-rounded">
-	  </div>
+	  </div> 
 	</div>
 
       </div> <!-- endof class="row"-->
@@ -473,12 +520,12 @@
                     true <i>I-state</i> is shown as
                     a <span style="color:green">green</span>
                     region.</p>
-
+                  
                     <!-- Modal box -->
                     <!-- Button trigger modal -->
                     <button class="btn btn-primary btn-md"
-                            data-toggle="modal" data-targe="#myModalGP">
-                      <i class="fa fa-video-camera"></i> Launch Simulation Video
+                            data-toggle="modal" data-target="#myModalGP">
+                      <i class="fa fa-video-camera"></i> Rectangle Approximation
                     </button>
 
                     <!-- Modal -->
@@ -488,16 +535,15 @@
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             <h4 class="modal-title"
-                                id="myModalLabelGP">Navigation Task using Double-Rectangle Range Space</h4>
+                                id="myModalLabelGP">Navigation Task using Rectangle Range Space</h4>
                           </div>
                           <div class="modal-body">
                             <div class="video">
-                              <video src="videos/test.mp4" width="450"
+                              <video src="videos/clutter_rect.mp4" width="450"
                                      height="450"
                                      controls="controls"
                                      type="video/mp4"></video>
                             </div>
-                            
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -506,13 +552,55 @@
                       </div>
                     </div>
                     <!-- End of modal box -->
+
+                    <!-- Modal box -->
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary btn-md"
+                            data-toggle="modal" data-target="#myModalGP2">
+                      <i class="fa fa-video-camera"></i> Double-Rectangle Approximation
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModalGP2" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGP2" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"
+                                id="myModalLabelGP2">Navigation Task using Double-Rectangle Range Space</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="video">
+                              <video src="videos/clutter_dbrect.mp4" width="450"
+                                     height="450"
+                                     controls="controls"
+                                     type="video/mp4"></video>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of modal box -->
+
                   </div>
                   <div class="col-sm-5">
-                    <object data="images/navclutter.svg"
-                            height="165"
-                            type="image/svg+xml">
-                    </object>
-
+                    <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+                      <img src="images/dbrect_clutter.png" width="240" alt="#">
+                    </a>
+                    <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img src="images/dbrect_clutter.png" alt="#" >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
                   </div>
                 </div>
 
@@ -554,13 +642,13 @@
     <!-- push down some space -->
     <!-- <div class="push"></div> -->
   </section> <!--  End of research-section -->
-
+  
   <section id="resume" class="resume-section">
     <div class="container">
       <div class="row">
 	<div class="col-md-6 headline wow bounceInDown">
 	  <h2>Resume</h2>
-	  <p>My education and experience.</p>
+	  <p>My education and experience.</p> 
 	</div>
 	<div class="col-md-3 col-md-offset-3 wow bounceInDown">
 	  <a href="./ys-vita.pdf" class="btn btn-default
@@ -633,7 +721,7 @@
 	  <i class="fa fa-calendar"></i> 2012
 	  <hr class="visible-xs">
 	</div>
-
+	
 	<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
 	  <h4>CSCE145 Algorithmic Design I</h4>
 	  <p>Teaching Assistant</p>
@@ -664,7 +752,7 @@
 	<!-- CountTo  -->
 	<script src="assets/js/jquery.countTo.js"></script>
 	<!-- WOW - Reveal Animations When You Scroll -->
-	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>   
 	<!-- Smooth scroll -->
 	<script src="assets/js/smoothscroll.js"></script>
 	<!-- Fitvids -->
