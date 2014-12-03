@@ -298,6 +298,15 @@
                           organize themselves into a rooted tree structure, and
                           then move to the positions assigned to them by their parents in this tree.
                         </p>
+                        <p>Two critical limitations:</p>
+                        <ol>
+                          <li>There is no guarantee that the robots will eventually form the desired
+                            formation and terminate the algorithm.
+                          </li>
+                          <li>The motion strategy may cause the formation become disconnected,
+                            decreasing the overall solution quality.
+                          </li>
+                        </ol>
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
@@ -391,15 +400,6 @@
                   <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
                       <div class="col-xs-8">
-                        <p>Prior algorithm has two critical limitations:</p>
-                        <ol>
-                          <li>There is no guarantee that the robots will eventually form the desired
-                            formation and terminate the algorithm.
-                          </li>
-                          <li>The motion strategy may cause the formation become disconnected,
-                            decreasing the overall solution quality.
-                          </li>
-                        </ol>
                         <p>
                           By defining a new procedure to construct the tree structure and modifying the motion strategy,
                           we prove that robots executing this new algorithm will form the desired
@@ -567,10 +567,11 @@
                               <div class="carousel-caption"></div>
                             </div>
                             <div class="item" style="text-align: center">
-                              <img src="images/final50bots.png" width="280" alt="final">
+                              <img src="images/final50bots.png" width="260" alt="final">
                               <div class="carousel-caption"></div>
                             </div>
                           </div>
+                        </div> <!-- end of class carousel slide -->
                           <!-- <p> -->
                           <!--   Snapshot of a simulation with 50 robots. Initially -->
                           <!--   their poses are randomly generated with -->
