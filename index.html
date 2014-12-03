@@ -405,7 +405,11 @@
                           we prove that robots executing this new algorithm will form the desired
                           lattice with bounded execution time while maitaining the communication graph connected.
                         </p>
-                        <p> Simulated software is implemented using <a href="http://www.ros.org/">ROS</a> </p>
+                        <p> Simulated software is implemented
+                        using <a href="http://www.ros.org/">ROS</a>. The
+                        re-plotted simulation of the
+                        &quot;triangle-hexagon-square&quot; formation is also
+                        provided.</p>
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
@@ -424,7 +428,110 @@
                               </div>
                               <div class="modal-body">
                                 <div class="video">
-                                  <video src="./videos/trihexsqvideo.mp4" width="450" height="350"
+                                  <video src="./videos/trihexsqvideo.mp4" width="480" height="360"
+                                         controls="controls" type="video/mp4"></video>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn
+                                                             btn-default"
+                                        data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>   <!-- End of modal box -->
+                         <!-- Modal box -->
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-primary btn-md"
+                                data-toggle="modal" data-target="#myModal6">
+                          <i class="fa fa-video-camera"></i> Triangle-Hexagon-Square
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"
+                                    id="myModalLabel6"> Triangle-Hexagon-Square
+                                  Formation with 30 Robots</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="video">
+                                  <video src="./videos/trihexsq30.mp4" width="480" height="300"
+                                         controls="controls" type="video/mp4"></video>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn
+                                                             btn-default"
+                                        data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>   <!-- End of modal box -->
+                        <p></p>
+                        <p>Observed the original ROS simulation runs slowly, we
+                        save poses of all robots at each step and plot these
+                        poses into a stream of video frames using the C++
+                        library developed
+                        by <a href="http://www.cse.sc.edu/~jokane">Dr. Jason
+                        O'kane</a>.</p>
+                                            
+                        <p>The re-plotted simulations of the &quot;hexagon-square&quot;
+                        and the &quot;octagon-square&quot; patterns are also
+                        provided below:</p>
+
+                        <!-- Modal box -->
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-primary btn-md"
+                                data-toggle="modal" data-target="#myModal4">
+                          <i class="fa fa-video-camera"></i> Hexagon-Square
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"
+                                    id="myModalLabel4"> Hexagon-Square
+                                  Formation with 30 Robots</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="video">
+                                  <video src="./videos/hexsq30.mp4" width="480" height="300"
+                                         controls="controls" type="video/mp4"></video>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn
+                                                             btn-default"
+                                        data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>   <!-- End of modal box -->
+
+                         <!-- Modal box -->
+                        <!-- Button trigger modal -->
+                        <button class="btn btn-primary btn-md"
+                                data-toggle="modal" data-target="#myModal5">
+                          <i class="fa fa-video-camera"></i> Octagon-Square
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"
+                                    id="myModalLabel5"> Octagon-Square
+                                  Formation with 30 Robots</h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="video">
+                                  <video src="./videos/octsq30.mp4" width="480" height="300"
                                          controls="controls" type="video/mp4"></video>
                                 </div>
                               </div>
@@ -440,13 +547,36 @@
                       </div>   <!-- End of div class col-xs-8  -->
 
                       <div class="col-xs-4">
-                        <object data="tex/octsq/octsqlg-1.svg"
-                                width="215" height="199"
-                                type="image/svg+xml">
-                        </object>
-                        <p>The lattice graph representing repeated Octagon-square lattice.
-                        </p>
-
+                        <!-- <object data="tex/octsq/octsqlg-1.svg" -->
+                        <!--         width="215" height="199" -->
+                        <!--         type="image/svg+xml"> -->
+                        <!-- </object> -->
+                        <!-- <p>The lattice graph representing repeated Octagon-square lattice. -->
+                        <!-- </p> -->
+                        <p></p>
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" id="carousel-widget" role="listbox">
+                            <div class="item active" style="text-align: center">
+                              <img src="images/initial50bots.png" width="280" alt="initial">
+                              <div class="carousel-caption"></div>
+                            </div>
+                            <div class="item" style="text-align: center">
+                              <img src="images/final50bots.png" width="280" alt="final">
+                              <div class="carousel-caption"></div>
+                            </div>
+                          </div>
+                          <!-- <p> -->
+                          <!--   Snapshot of a simulation with 50 robots. Initially -->
+                          <!--   their poses are randomly generated with -->
+                          <!--   communication graph connected. Finally the robots -->
+                          <!--   forms a triangle-hexagon-square pattern. -->
+                          <!-- </p> -->
                       </div>     <!-- End of div class col-xs-4 -->
                     </div>       <!-- End of div class panel-body -->
                   </div>         <!-- End of div id="collapseTwo"  -->
