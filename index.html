@@ -576,6 +576,13 @@
                     uncertainties">I-state</a>) to remain in a structured subset
                     of the information space.
               </p>
+              
+              <p>We deliver simulations of a navigation task, in which a mobile
+                robot follows predefined waypoints in environment by observing
+                the presence but not distance to the randomly
+                generated <span style="color:blue">landmarks</span>. Robot is
+                guided by the centroid point of the approximated I-state.
+              </p>
               <p>
                 The experimental results for a sensor-based navigation
                 task demostrated that using our method, compared to a
@@ -583,29 +590,47 @@
                 I-state, achieves a similar success rate at a small
                 fraction of the computational cost.
               </p>
-              <div class="panel panel-danger">
+              <div class="panel panel-danger"> 
                 <!-- Default panel contents -->
-                <div class="panel-heading"> <i class="fa
-                                                      fa-video-camera"></i> Simulation Video</div>
-                <div class="panel-body">
-                  <div class="col-sm-7">
-                    <p>We deliver simulations of a navigation
-                    task, in which a mobile robot follows predefined waypoints
-                    in environment by observing the presence but not distance to
-                    the randomly generated <span style="color:blue">landmarks</span>.
-                    The <span style="color:blue">blue</span> region denotes the
-                    range of where the robot could get observations from
-                    landmarks. Robot is guided by the centroid point of the
-                    approximated I-state. The true <i>I-state</i> is shown as
-                    a <span style="color:green">green</span> region.</p> 
-                    <p>
-                      Right figure shows a snapshot of
-                      using <span style="color:red">double-rectangle</span> to
-                      approximate the I-state in a navigation task.  Two
-                      simulation videos are provided showing a robot could
-                      complete the task using approximated I-state</p>
-                    <!-- Modal box -->
-                    <!-- Button trigger modal -->
+                <div class="panel-heading">  
+                  <i class="fa fa-video-camera"></i>  
+                  Simulation Video 
+                </div> 
+                <div class="panel-body"> 
+                  <p> Figure shows a snapshot of
+                    using <span style="color:red">double-rectangle</span> to
+                    approximate the I-state in a navigation task.
+                  </p>
+               
+                  <p>
+                    <a href="#"  data-toggle="modal" data-target="#lightbox"> 
+                      <img src="images/dbrect_clutter.png" height="180" alt="#">
+                    </a>
+                  </p>
+                  <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" 
+                       aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <button type="button" class="close hidden" 
+                              data-dismiss="modal" aria-hidden="true">X</button>
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <img src="images/dbrect_clutter.png" alt="#" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The <span style="color:blue">blue</span> region denotes
+                    the range of where the robot could get observations from
+                    landmarks.
+                  </p>
+                  <p>The true <i>I-state</i> is shown as
+                    a <span style="color:green">green</span> region.
+                  </p>
+                  <p>Two simulation videos are provided showing a robot could
+                    complete the task using approximated I-state
+                  </p>
+                <!-- Modal box -->
+                <!-- Button trigger modal -->
                     <button class="btn btn-primary btn-md"
                             data-toggle="modal" data-target="#myModalGP">
                       <i class="fa fa-video-camera"></i> Rectangle Approximation
@@ -642,7 +667,6 @@
                             data-toggle="modal" data-target="#myModalGP2">
                       <i class="fa fa-video-camera"></i> Double-Rectangle Approximation
                     </button>
-
                     <!-- Modal -->
                     <div class="modal fade" id="myModalGP2" tabindex="-1" role="dialog" aria-labelledby="myModalLabelGP2" aria-hidden="true">
                       <div class="modal-dialog">
@@ -667,42 +691,25 @@
                       </div>
                     </div>
                     <!-- End of modal box -->
-
-                  </div>
-                  <div class="col-sm-5">
-                    <a href="#"  data-toggle="modal" data-target="#lightbox"> 
-                      <img src="images/dbrect_clutter.png" height="200" alt="#">
-                    </a>
-                    <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">X</button>
-                        <div class="modal-content">
-                          <div class="modal-body">
-                            <img src="images/dbrect_clutter.png" alt="#" >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                    
-                  </div>
-                </div>
-
-              </div> <!-- End of div class panel-danger -->
-
+                  </div> 
+                </div> 
+              </div>  
+              <!-- End of div class panel-danger -->
+              <p>
               <a class="btn btn-default btn-sm" href="./papers/songOkane_icra12.pdf">
                 <i class="fa fa-file-pdf-o"></i>
                 <span class="network-name">
                   ICRA12 Paper
                 </span>
               </a>
-
               <a class="btn btn-default btn-sm" href="./papers/slides_icra12.pdf">
                 <i class="fa fa-file-pdf-o"></i>
                 <span class="network-name">
                   ICRA12 Slides
                 </span>
               </a>
-
+              </p>
             </div>
             <!-- End of div id="sectionB" class tab-pane fade -->
           </div> <!-- End of div class tab-content  -->
