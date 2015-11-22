@@ -103,20 +103,19 @@
 	<!-- side column  -->
 	<div class="col-md-2">
 	</div>
-	<div class="col-md-6 col-sm-12 wow bounceInLeft">
+	<div class="col-md-5 col-sm-12 wow bounceInLeft">
 	  <h2>Profile</h2>
 	    <p>
-	    I am a Ph.D. candidate in the
+	    I am a Ph.D. in the
 	    <a href="http://www.cse.sc.edu" target="_blank" style="color:#73000a">
 	      Department of Computer Science and Engineering
 	    </a>
 	    at the University of South Carolina, Columbia.</p>
 	  <p>
-	    Currently I am working
-	    in the South Carolina Autonomous Robotics Research (SCARR)
-	    Laboratory under the supervision of
-	    <a href="http://www.cse.sc.edu/~jokane" target="_blank" style="color:#73000a">
-	      Prof. Jason M. O'kane</a>.  My research interests include
+	    I work with  <a href="http://www.cse.sc.edu/~jokane" target="_blank" style="color:#73000a">
+	      Prof. Jason M. O'Kane</a> 
+	    in the Center for Computational Robotics (CCR).
+            My research interests include
 	    Multi-robot Systems, Planning Algorithms and Computational
 	    Geometry.
 	  </p>
@@ -154,9 +153,10 @@
 	  </ul>
 	
 	</div>
-	<div class="col-md-4 col-sm-12 hidden-xs wow bounceInRight">
+	<div class="col-md-5 col-sm-12 hidden-xs wow bounceInRight">
 	  <div id="profile" class="grow pic"> 
-	    <img src="images/sfo.jpg" alt="me" height="320" id="me" class="img-rounded">
+	    <!--img src="images/sfo.jpg" alt="me" height="320" id="me" class="img-rounded"-->
+            <img src="images/withadvisor.jpg" alt="meandadvisor" width="320">
 	  </div> 
 	</div>
 
@@ -345,7 +345,7 @@
                         <p> Simulated software was implemented
                         with <a href="http://www.ros.org/">ROS</a>. The
                         simulation of the
-                        &quot;triangle-hexagon-square&quot; formation is
+                        &quot;repeating-square lattice pattern&quot; formation is
                         provided here.</p>
                         <!-- Modal box -->
                         <!-- Button trigger modal -->
@@ -360,12 +360,12 @@
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h4 class="modal-title"
-                                    id="myModalLabel3"> Triangle-Hexagon-Square
-                                  Formation with 30 Robots</h4>
+                                    id="myModalLabel3"> Quick Repeating-Square
+                                  Formation Demo with 10 Robots</h4>
                               </div>
                               <div class="modal-body">
                                 <div class="video">
-                                  <video src="./videos/trihexsqvideo.mp4" width="480" height="360"
+                                  <video src="./videos/square10.mp4" width="480" height="480"
                                          controls="controls" type="video/mp4"></video>
                                 </div>
                               </div>
@@ -381,7 +381,7 @@
                         <!-- Button trigger modal -->
                         <button class="btn btn-primary btn-md"
                                 data-toggle="modal" data-target="#myModal6">
-                          <i class="fa fa-video-camera"></i> Triangle-Hexagon-Square
+                          <i class="fa fa-video-camera"></i> Repeating-Square
                         </button>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
@@ -390,12 +390,12 @@
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h4 class="modal-title"
-                                    id="myModalLabel6"> Triangle-Hexagon-Square
-                                  Formation with 30 Robots</h4>
+                                    id="myModalLabel6"> Repeating-Square
+                                  Formation with 40 Robots</h4>
                               </div>
                               <div class="modal-body">
                                 <div class="video">
-                                  <video src="./videos/trihexsq30.mp4" width="480" height="300"
+                                  <video src="./videos/square40.mp4" width="480" height="480"
                                          controls="controls" type="video/mp4"></video>
                                 </div>
                               </div>
@@ -407,80 +407,7 @@
                             </div>
                           </div>
                         </div>   <!-- End of modal box -->
-                        <p></p>
-                        <p>The original ROS simulation ran slowly, we
-                        saved poses of all robots at each time step and plotted these
-                        poses into a stream of video frames using the C++
-                        library developed
-                        by <a href="http://www.cse.sc.edu/~jokane">Dr. Jason
-                        O'kane</a>.</p>
-                                            
-                        <p>The re-plotted simulations of the &quot;hexagon-square&quot;
-                        and the &quot;octagon-square&quot; patterns are 
-                        provided below:</p>
-
-                        <!-- Modal box -->
-                        <!-- Button trigger modal -->
-                        <button class="btn btn-primary btn-md"
-                                data-toggle="modal" data-target="#myModal4">
-                          <i class="fa fa-video-camera"></i> Hexagon-Square
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title"
-                                    id="myModalLabel4"> Hexagon-Square
-                                  Formation with 30 Robots</h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="video">
-                                  <video src="./videos/hexsq30.mp4" width="480" height="300"
-                                         controls="controls" type="video/mp4"></video>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn
-                                                             btn-default"
-                                        data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>   <!-- End of modal box -->
-
-                         <!-- Modal box -->
-                        <!-- Button trigger modal -->
-                        <button class="btn btn-primary btn-md"
-                                data-toggle="modal" data-target="#myModal5">
-                          <i class="fa fa-video-camera"></i> Octagon-Square
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title"
-                                    id="myModalLabel5"> Octagon-Square
-                                  Formation with 30 Robots</h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="video">
-                                  <video src="./videos/octsq30.mp4" width="480" height="300"
-                                         controls="controls" type="video/mp4"></video>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn
-                                                             btn-default"
-                                        data-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>   <!-- End of modal box -->
-
+           
                       </div>   <!-- End of div class col-xs-8  -->
 
                       <div class="col-xs-4">
@@ -521,6 +448,12 @@
                 </div>           <!-- End of div class panel-info -->
 
               </div>             <!-- End of div class panel-group -->
+	      <a class="btn btn-default btn-sm" href="./defense/slides.pdf">
+                <i class="fa fa-file-pdf-o"></i>
+                <span class="network-name">
+                  Defense Slides
+                </span>
+              </a>
               <a class="btn btn-default btn-sm" href="./papers/paper.pdf">
                 <i class="fa fa-file-pdf-o"></i>
                 <span class="network-name">
